@@ -3,113 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad_Tablas2</title>
+    <title>GeeksforGeeks - Tabla con Rowspan y Colspan</title>
     <style>
-        
-table {
-    border-collapse: collapse;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            flex-direction: column;
+        }
 
-td {
-    padding: 16px;
-    border: 1px solid black;
-    font-weight: bold;
-    text-align: center;
-}
+        h1, h2 {
+            text-align: center;
+        }
 
-th{
-padding: auto;
-border: 1px solid black;
-}
+        h1 {
+            color: #333;
+        }
 
-p {
-    display:flex;
-    justify-content: center;
-}
+        h2 {
+            color: #666;
+        }
 
-div {
-    display:flex;
-    justify-content: center;
-}
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-img {
-width: 60px;
-}
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-}
+        th {
+           
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
-    <p style="font-size: 14px; color: red; text-transform: uppercase; white-space: nowrap;">ginés colegio virgen de la cabeza</p>
-    <div>
+    <h1>GeeksforGeeks</h1>
+    <h2>Table with Rowspan and Colspan</h2>
     <table>
         <tr>
-            <th colspan="1"><a href="https://imgbb.com/"><img src="https://i.ibb.co/ycCRh5SP/images-removebg-preview-1.png" alt="images-removebg-preview-1" border="0"></a></th>
-            <th colspan="1">LUNES</th>
-            <th colspan="1">MARTES</th>
-            <th colspan="1">MIERCOLES</th>
-            <th colspan="1">JUEVES</th>
-            <th colspan="1">VIERNES</th>
+            <th>Name</th>
+            <th></th>
+            <th>Class</th>
+            <th></th>
+            <th>School</th>
         </tr>
         <tr>
-            <td colspan="1">8:15-9:15</td>
-            <td colspan="1"></td>
-            <td colspan="1" style="background-color: rgba(255, 176, 7, 0.829);">MANUALIDADES 1º</td>
-            <td colspan="1" style="background-color: rgba(255, 176, 7, 0.829);">MANUALIDADES 1º</td>
-            <td colspan="1" style="background-color: rgba(255, 176, 7, 0.829);">MANUALIDADES 1º</td>
-            <td colspan="1" style="background-color: rgb(142, 214, 33);">ARTE 3º</td>
+            <td rowspan="2">Mahima</td>
+            <td>Gupta</td>
+            <td>11</td>
+            <td></td>
+            <td rowspan="2">MVM School</td>
         </tr>
         <tr>
-            <td colspan="1">9:15-10:15</td>
-            <td colspan="1"></td>
-            <td colspan="1" style="background-color: rgb(256,148,148);">LATIN 4º</td>
-            <td colspan="1" style="background-color: rgb(256,148,148);">LATIN 4º</td>
-            <td colspan="1" style="background-color: rgb(256,148,148);">LATIN 4º</td>
-            <td colspan="1" style="background-color: rgb(188,188,192);">TUTORIA 4º</td>
+            <td></td>
+            <td>A</td>
+            <td></td>
         </tr>
         <tr>
-            <td colspan="1">10:15-11:15</td>
-            <td colspan="1" style="background-color: rgb(256,148,148);">LATIN 4º</td>
-            <td colspan="1" style="background-color: rgb(208,164,228);">ROBÓTICA UNI</td>
-            <td colspan="1" style="background-color: rgb(142, 214, 33);">ARTE 3º</td>
-            <td colspan="1" style="background-color: rgb(208,164,228);">ROBOTICA UNI</td>
-            <td colspan="1" style="background-color: rgb(256,252,4);">INGENIERIA ESPACIAL</td>
+            <td rowspan="3">Sri</td>
+            <td>Krishn</td>
+            <td>3</td>
+            <td></td>
+            <td rowspan="3">LMS School</td>
         </tr>
         <tr>
-            <td colspan="1">11:15-11:45</td>
-            <td colspan="1"></td>
-            <td colspan="1"></td>
-            <td colspan="1">RECREO</td>
-            <td colspan="1"></td>
-            <td colspan="1"></td>
+            <td></td>
+            <td>B</td>
+            <td></td>
         </tr>
         <tr>
-            <td colspan="1">11:45-12:45</td>
-            <td colspan="1" style="background-color: #ff84fc;">REFUERZO</td>
-            <td colspan="1" style="background-color: rgb(142, 214, 33);">ARTE 3º</td>
-            <td colspan="1" style="background-color: rgb(208,164,228);">ROBOTICA UNI</td>
-            <td colspan="1" style="background-color: rgb(142, 214, 33);">ARTE 3º</td>
-            <td colspan="1" style="background-color: rgb(256,252,4);">INGENIERIA ESPACIAL</td>
+            <td></td>
+            <td>C</td>
+            <td></td>
         </tr>
         <tr>
-            <td colspan="1">12:45-13:45</td>
-            <td colspan="1" style="background-color: #90e4fc;">JAPONES 5º</td>
-            <td colspan="1" style="background-color: rgb(256,252,4);">INGENIERIA ESPACIAL</td>
-            <td colspan="1" style="background-color: #90e4fc;">JAPONES 5º</td>
-            <td colspan="1" style="background-color: #ff84fc;">TALLER BACHILLERATO</td>
-            <td colspan="1" style="background-color: rgb(208,208,4);">MODELISMIO</td>
+            <td rowspan="2">Shivika</td>
+            <td>Goyal</td>
+            <td>5</td>
+            <td></td>
+            <td rowspan="2">SCPM School</td>
         </tr>
         <tr>
-            <td colspan="1">13:45-14:45</td>
-            <td colspan="1" style="background-color: #ffc404;">CARTOGRAFIA INTERACTIVA</td>
-            <td colspan="1" style="background-color: #90e4fc;">JAPONES 5º</td>
-            <td colspan="1"></td>
-            <td colspan="1"></td>
-            <td colspan="1"></td>
+            <td></td>
+            <td>A</td>
+            <td></td>
         </tr>
     </table>
-</div>
 </body>
 </html>
