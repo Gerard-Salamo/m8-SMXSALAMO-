@@ -1,12 +1,25 @@
-.tabla1{
+.tablas {
     display: flex; 
-    justify-content: right; 
     gap: 20px; 
-   
-    th{ 
-    background-color: bisque; 
-    } 
-    td, th{ 
-    padding: 5px; 
-    }
+    justify-content: left; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+h3, table {
+    display: block; 
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: bisque;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid black;
 }
