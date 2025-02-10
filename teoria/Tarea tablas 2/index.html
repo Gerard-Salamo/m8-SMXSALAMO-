@@ -3,107 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeeksforGeeks - Tabla con Rowspan y Colspan</title>
+    <title>ejtablas2add</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
+            background-color: #11fcc950;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 800px;
-            flex-direction: column;
         }
-
-        h1, h2 {
-            text-align: center;
+        .general {
+            width: 1000px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
         }
-
         h1 {
-            color: green;
-        }
-
-        h2 {
-            color: green;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 60%;
-            margin: 20px 0;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
             text-align: center;
+            color: green;
         }
-
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-
-        tr:hover {
-            background-color: #ddd;
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>GeeksforGeeks</h1>
-    <h2>Table with Rowspan and Colspan</h2>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th></th>
-            <th>Class</th>
-            <th></th>
-            <th>School</th>
-        </tr>
-        <tr>
-            <td rowspan="2">Mahima</td>
-            <td>Gupta</td>
-            <td>11</td>
-            <td></td>
-            <td rowspan="2">MVM School</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>A</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="3">Sri</td>
-            <td>Krishn</td>
-            <td>3</td>
-            <td></td>
-            <td rowspan="3">LMS School</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>B</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="2">Shivika</td>
-            <td>Goyal</td>
-            <td>5</td>
-            <td></td>
-            <td rowspan="2">SCPM School</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>A</td>
-            <td></td>
-        </tr>
-    </table>
+
+    <div class="general">
+        <h1>GeeksforGeeks</h1>
+        <table>
+            <caption>Table with Rowspan and Colspan</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>School</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mahima Gupta</td>
+                    <td>11 A</td>
+                    <td>MVM School</td>
+                </tr>
+                <tr>
+                    <td>Sri Krishn</td>
+                    <td>3 B</td>
+                    <td>LMS School</td>
+                </tr>
+                <tr>
+                    <td>Shivika Goyal</td>
+                    <td>5 A</td>
+                    <td>SCPM School</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
