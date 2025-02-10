@@ -14,11 +14,11 @@
             height: 800px;
         }
         .general {
-            width: 1000px;
+            width:  1200px;
             margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 4px;
             background-color: white;
+            border: 3px solid black;
         }
         h1 {
             text-align: center;
@@ -27,23 +27,23 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
         }
         th, td {
-            padding: 12px;
-            text-align: center;
-            border: 1px solid #ddd;
+            padding: 15.5px;
+            text-align: left;
+            border: 3px solid black;
         }
         th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: white;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        tr {
+            background-color: white
         }
-        caption {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+
+        h4 {
+        display: flex;
+        justify-content: center;
+        color: green;
         }
     </style>
 </head>
@@ -52,29 +52,41 @@
     <div class="general">
         <h1>GeeksforGeeks</h1>
         <table>
-            <caption>Table with Rowspan and Colspan</caption>
+            <h4>Table with Rowspan and Colspan</h4>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Class</th>
-                    <th>School</th>
+                    <th colspan="2" style="text-align: center;">Name</th>
+                    <th colspan="2" style="text-align: center;">Class</th>
+                    <th colspan="2" style="text-align: center;">School</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Mahima Gupta</td>
-                    <td>11 A</td>
-                    <td>MVM School</td>
+                    <td rowspan="2">Mahima</td>
+                    <td rowspan="2">Gupta</td>
+                    <td colspan="2">11</td>
+                    <td rowspan="2">MVM School</td>
                 </tr>
                 <tr>
-                    <td>Sri Krishn</td>
-                    <td>3 B</td>
-                    <td>LMS School</td>
+                    <td colspan="2">A</td>
                 </tr>
                 <tr>
-                    <td>Shivika Goyal</td>
-                    <td>5 A</td>
-                    <td>SCPM School</td>
+                    <td rowspan="2">Sri</td>
+                    <td rowspan="2">Krishn</td>
+                    <td colspan="2">3</td>
+                    <td rowspan="2">LMS School</td>
+                </tr>
+                <tr>
+                    <td colspan="2">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Shivika</td>
+                    <td rowspan="2">Goyal</td>
+                    <td colspan="2">5</td>
+                    <td rowspan="2">SCPM School</td>
+                </tr>
+                <tr>
+                    <td colspan="2">A</td>
                 </tr>
             </tbody>
         </table>
