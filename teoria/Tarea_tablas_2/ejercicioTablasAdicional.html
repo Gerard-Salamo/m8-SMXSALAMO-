@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejtablas2adicional</title>
+    <title>Tabla corregida</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,12 +11,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 800px;
+            height: 100vh;
         }
         .general {
-            width: 1200px;
-            margin: 20px;
-            padding: 4px;
+            width: 90%;
+            max-width: 1000px;
+            padding: 10px;
             background-color: white;
             border: 3px solid black;
         }
@@ -29,19 +29,16 @@
             border-collapse: collapse;
         }
         th, td {
-            padding: 15.5px;
-            text-align: left;
+            padding: 12px;
+            text-align: center;
             border: 3px solid black;
         }
         th {
             background-color: white;
-        }
-        tr {
-            background-color: white;
+            font-weight: bold;
         }
         h4 {
-            display: flex;
-            justify-content: center;
+            text-align: center;
             color: green;
         }
     </style>
@@ -53,44 +50,34 @@
         <table>
             <thead>
                 <tr>
-                    <th style="text-align: center;">First Name</th>
-                    <th style="text-align: center;">Last Name</th>
-                    <th style="text-align: center;">Class</th>
-                    <th style="text-align: center;">Section</th>
-                    <th style="text-align: center;">School</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Class</th>
+                    <th>School</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td rowspan="2">Mahima</td>
                     <td rowspan="2">Gupta</td>
-                    <td rowspan="2">11</td>
-                    <td>A</td>
+                    <td rowspan="2">11<br>A</td>
                     <td rowspan="2">MVM School</td>
                 </tr>
-                <tr>
-                    <td>B</td>
-                </tr>
+                <tr></tr>
                 <tr>
                     <td rowspan="2">Sri</td>
                     <td rowspan="2">Krishn</td>
-                    <td rowspan="2">3</td>
-                    <td>A</td>
+                    <td rowspan="2">3<br>B</td>
                     <td rowspan="2">LMS School</td>
                 </tr>
-                <tr>
-                    <td>B</td>
-                </tr>
+                <tr></tr>
                 <tr>
                     <td rowspan="2">Shivika</td>
                     <td rowspan="2">Goyal</td>
-                    <td rowspan="2">5</td>
-                    <td>A</td>
+                    <td rowspan="2">5<br>A</td>
                     <td rowspan="2">SCPM School</td>
                 </tr>
-                <tr>
-                    <td>B</td>
-                </tr>
+                <tr></tr>
             </tbody>
         </table>
     </div>
